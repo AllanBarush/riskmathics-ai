@@ -1,0 +1,1078 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RiskMathics AI Academy</title>
+<meta name="description" content="Escuela ejecutiva para dirigir personas, reinventar organizaciones y gobernar inteligencia. Nueve programas y certificaciones para consejos, CEOs y C-Level. Club de Industriales, CDMX.">
+<link rel="canonical" href="https://riskmathics.ai/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RiskMathics AI Academy">
+<meta property="og:description" content="Lead Humans. Reinvent Organizations. Govern Intelligence. Nueve programas ejecutivos y tres certificaciones para dirigir empresas AI-Native.">
+<meta property="og:url" content="https://riskmathics.ai/">
+<meta property="og:image" content="https://riskmathics.ai/rm-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="rm-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+ --bg:#070D14; --bg2:#0D1B2A; --panel:#101F30; --rule:#1D3044;
+ --ink:#EDE7DC; --dim:#95A3B4; --faint:#63748A;
+ --acc:#D97757; --acc2:#E89478;
+ --sp:clamp(68px,9vw,152px);
+ --pad:clamp(20px,5vw,68px);
+ --max:1240px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:'Lora',Georgia,serif;
+ font-size:clamp(15.5px,1.06vw,17.5px);line-height:1.78;-webkit-font-smoothing:antialiased;
+ overflow-x:hidden}
+h1,h2,h3,h4,.p{font-family:'Poppins',Arial,sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+a{color:inherit}
+img{max-width:100%;display:block}
+.w{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+section{padding:var(--sp) 0;position:relative}
+.alt{background:var(--bg2)}
+.eye{font-family:'Poppins',Arial,sans-serif;font-size:10.5px;font-weight:500;letter-spacing:3.4px;
+ text-transform:uppercase;color:var(--acc);margin-bottom:26px;display:block}
+.eye b{color:var(--faint);font-weight:400}
+h2{font-size:clamp(27px,4.1vw,54px);letter-spacing:-.033em;margin-bottom:26px;max-width:19ch}
+h2.wide{max-width:26ch}
+.lede{font-size:clamp(17px,1.55vw,21.5px);color:var(--dim);max-width:60ch;line-height:1.7}
+p+p{margin-top:19px}
+.body p{color:var(--dim);max-width:66ch}
+.body b,.body strong{color:var(--ink);font-weight:600}
+/* ---------- header ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:60;padding:16px 0;
+ background:rgba(7,13,20,0);transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+header.on{background:rgba(7,13,20,.93);backdrop-filter:blur(14px);border-bottom-color:var(--rule)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.hd img{height:30px;width:auto}
+nav{display:flex;gap:27px;align-items:center}
+nav a{font-family:'Poppins',Arial,sans-serif;font-size:11px;font-weight:500;letter-spacing:1.6px;
+ text-transform:uppercase;text-decoration:none;color:var(--dim);transition:color .2s}
+nav a:hover{color:var(--ink)}
+nav a.cta{color:var(--bg);background:var(--acc);padding:10px 18px;border-radius:2px;font-weight:600}
+nav a.cta:hover{background:var(--acc2);color:var(--bg)}
+@media(max-width:940px){nav a:not(.cta){display:none}}
+/* ---------- hero ---------- */
+#hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+ padding-top:clamp(88px,12vh,112px);padding-bottom:clamp(26px,4vh,44px);overflow:hidden}
+#hero:before{content:"";position:absolute;inset:0;pointer-events:none;
+ background:radial-gradient(58% 46% at 76% 16%,rgba(217,119,87,.15),transparent 68%),
+            radial-gradient(48% 42% at 12% 88%,rgba(29,72,110,.32),transparent 70%)}
+#hero .w{position:relative;z-index:1}
+.kicker{font-family:'Poppins',Arial,sans-serif;font-size:clamp(10px,1vw,12px);font-weight:500;
+ letter-spacing:4.6px;text-transform:uppercase;color:var(--acc);margin-bottom:clamp(16px,3vh,30px)}
+h1{font-size:clamp(36px,min(7.8vw,10vh),104px);font-weight:800;line-height:.92;
+ letter-spacing:-.04em;max-width:15ch;margin-bottom:clamp(20px,3vh,34px)}
+h1 i{font-style:normal;color:var(--acc)}
+.manifesto{font-size:clamp(16px,min(1.75vw,2.55vh),25px);font-style:italic;color:var(--ink);
+ max-width:34ch;line-height:1.5;margin-bottom:clamp(10px,1.7vh,16px)}
+.sub{font-size:clamp(14.5px,min(1.3vw,1.95vh),18px);color:var(--dim);max-width:56ch;line-height:1.66}
+.rail{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);
+ border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:clamp(20px,3.7vh,58px)}
+.rail div{background:var(--bg);padding:clamp(13px,2.2vh,20px) 16px clamp(14px,2.4vh,22px)}
+.rail span{display:block;font-family:'Poppins',Arial,sans-serif;font-size:9.5px;font-weight:500;
+ letter-spacing:2.3px;text-transform:uppercase;color:var(--faint);margin-bottom:7px}
+.rail b{font-family:'Poppins',Arial,sans-serif;font-size:clamp(13px,1.15vw,15.5px);font-weight:600;
+ color:var(--ink);letter-spacing:-.01em;line-height:1.3;display:block}
+@media(max-width:820px){.rail{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .rail div:last-child:nth-child(odd){grid-column:1 / -1}}
+/* ---------- el gesto: el verbo ---------- */
+.verb{font-family:'Poppins',Arial,sans-serif;font-weight:800;text-transform:uppercase;
+ font-size:clamp(46px,7.6vw,104px);line-height:.86;letter-spacing:-.045em;
+ color:transparent;-webkit-text-stroke:1px var(--acc);display:block}
+.verb.solid{color:var(--acc);-webkit-text-stroke:0}
+/* ---------- arquitectura ---------- */
+.arch{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--rule);
+ border:1px solid var(--rule);margin-top:clamp(40px,5vw,66px)}
+.arch a{background:var(--bg2);padding:clamp(26px,3vw,40px) clamp(20px,2.4vw,34px);
+ text-decoration:none;display:block;transition:background .25s;position:relative}
+.arch a:hover{background:var(--panel)}
+.arch .n{font-family:'Poppins',Arial,sans-serif;font-size:10px;font-weight:500;letter-spacing:2.6px;
+ color:var(--faint);display:block;margin-bottom:16px}
+.arch .verb{font-size:clamp(26px,2.9vw,40px);margin-bottom:15px;-webkit-text-stroke-width:.8px}
+.arch h3{font-size:clamp(15px,1.35vw,18.5px);font-weight:600;letter-spacing:-.015em;
+ color:var(--ink);line-height:1.32;margin-bottom:11px}
+.arch p{font-size:14px;color:var(--dim);line-height:1.62;font-family:'Lora',Georgia,serif}
+.arch .meta{font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:1.7px;
+ text-transform:uppercase;color:var(--acc);margin-top:17px;font-weight:500}
+@media(max-width:940px){.arch{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .arch a:last-child:nth-child(odd){grid-column:1 / -1}}
+@media(max-width:620px){.arch{grid-template-columns:1fr}}
+/* ---------- programa ---------- */
+.prog{border-top:1px solid var(--rule);padding-top:clamp(40px,4.6vw,64px);
+ margin-top:clamp(50px,6vw,86px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.42fr);
+ gap:clamp(30px,4.4vw,72px);align-items:start}
+.prog:first-of-type{border-top:none;margin-top:0;padding-top:0}
+.prog .left{position:sticky;top:104px}
+.prog .num{font-family:'Poppins',Arial,sans-serif;font-size:10.5px;font-weight:500;letter-spacing:3px;
+ color:var(--faint);margin-bottom:15px;display:block}
+.prog h3{font-size:clamp(21px,2.35vw,32px);font-weight:700;letter-spacing:-.028em;
+ line-height:1.14;margin:16px 0 14px}
+.prog .tag{font-family:'Lora',Georgia,serif;font-style:italic;font-size:clamp(14.5px,1.2vw,17px);
+ color:var(--acc2);line-height:1.5;margin-bottom:24px}
+.q{border-left:2px solid var(--acc);padding:3px 0 3px 20px;margin-bottom:26px}
+.q p{font-size:15.5px;color:var(--ink);line-height:1.62;margin:0}
+.spec{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-bottom:26px}
+.spec div{background:var(--bg);padding:13px 17px;display:flex;justify-content:space-between;
+ gap:16px;align-items:baseline}
+.alt .spec div{background:var(--bg2)}
+.spec dt,.spec span:first-child{font-family:'Poppins',Arial,sans-serif;font-size:9.5px;font-weight:500;
+ letter-spacing:2.1px;text-transform:uppercase;color:var(--faint);flex:0 0 auto}
+.spec b{font-family:'Poppins',Arial,sans-serif;font-size:13.5px;font-weight:600;color:var(--ink);
+ text-align:right;letter-spacing:-.01em}
+.spec b.acc{color:var(--acc)}
+.curr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--rule);
+ border:1px solid var(--rule)}
+.curr div{background:var(--bg);padding:15px 18px 16px;display:flex;gap:13px;align-items:baseline}
+.alt .curr div{background:var(--bg2)}
+.curr i{font-style:normal;font-family:'Poppins',Arial,sans-serif;font-size:10.5px;font-weight:600;
+ color:var(--acc);flex:0 0 20px;letter-spacing:.5px}
+.curr span{font-size:14.5px;color:var(--dim);line-height:1.5}
+@media(max-width:900px){.prog{grid-template-columns:1fr}.prog .left{position:static}
+ .curr{grid-template-columns:1fr}}
+.who{margin-top:24px;font-size:14px;color:var(--faint);line-height:1.62}
+.who b{color:var(--dim);font-weight:600;font-family:'Poppins',Arial,sans-serif;font-size:9.5px;
+ letter-spacing:2.1px;text-transform:uppercase;display:block;margin-bottom:7px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{font-family:'Poppins',Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:1.7px;
+ text-transform:uppercase;text-decoration:none;padding:13px 22px;border-radius:2px;
+ background:var(--acc);color:var(--bg);transition:background .2s;display:inline-block}
+.btn:hover{background:var(--acc2)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc);background:transparent}
+/* ---------- rejillas ---------- */
+.grid3,.grid4,.grid2{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);
+ margin-top:clamp(38px,4.6vw,60px)}
+.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.grid2>div,.grid3>div,.grid4>div{background:var(--bg);padding:clamp(24px,2.7vw,36px) clamp(20px,2.2vw,30px)}
+.alt .grid2>div,.alt .grid3>div,.alt .grid4>div{background:var(--bg2)}
+.grid3 h4,.grid4 h4,.grid2 h4{font-size:15.5px;font-weight:600;letter-spacing:-.012em;
+ color:var(--ink);margin-bottom:11px;line-height:1.3}
+.grid3 p,.grid4 p,.grid2 p{font-size:14px;color:var(--dim);line-height:1.62}
+.grid3 .k,.grid4 .k,.grid2 .k{font-family:'Poppins',Arial,sans-serif;font-size:10px;font-weight:500;
+ letter-spacing:2.4px;text-transform:uppercase;color:var(--acc);display:block;margin-bottom:14px}
+@media(max-width:940px){.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .grid2>div:last-child:nth-child(odd),.grid3>div:last-child:nth-child(odd),
+ .grid4>div:last-child:nth-child(odd){grid-column:1 / -1}}
+@media(max-width:620px){.grid2,.grid3,.grid4{grid-template-columns:1fr}}
+/* ---------- tabla ---------- */
+.tw{overflow-x:auto;margin-top:clamp(38px,4.6vw,60px);border:1px solid var(--rule)}
+table{width:100%;border-collapse:collapse;min-width:560px}
+th,td{text-align:left;padding:15px 20px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-family:'Poppins',Arial,sans-serif;font-size:9.5px;font-weight:500;letter-spacing:2.2px;
+ text-transform:uppercase;color:var(--faint);background:var(--bg2)}
+.alt th{background:var(--bg)}
+td{font-size:14.5px;color:var(--dim);line-height:1.55}
+td b{color:var(--ink);font-weight:600;font-family:'Poppins',Arial,sans-serif;font-size:14px}
+td .acc{color:var(--acc);font-family:'Poppins',Arial,sans-serif;font-weight:600;font-size:13.5px;
+ white-space:nowrap}
+tr:last-child td{border-bottom:none}
+/* ---------- kids ---------- */
+.stage{display:grid;grid-template-columns:minmax(0,.44fr) minmax(0,1fr);gap:clamp(24px,3.4vw,54px);
+ padding:clamp(28px,3.4vw,44px) 0;border-top:1px solid var(--rule);align-items:start}
+.stage .age{font-family:'Poppins',Arial,sans-serif;font-weight:800;
+ font-size:clamp(34px,4.6vw,64px);line-height:.92;letter-spacing:-.045em;
+ color:transparent;-webkit-text-stroke:1px var(--acc);margin-bottom:12px}
+.stage h4{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:9px;letter-spacing:-.012em}
+.stage .d{font-size:14px;color:var(--dim);line-height:1.62}
+.lv{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.lv div{background:var(--bg2);padding:15px 19px}
+.lv .n{font-family:'Poppins',Arial,sans-serif;font-size:9.5px;font-weight:500;letter-spacing:2.2px;
+ text-transform:uppercase;color:var(--acc);display:block;margin-bottom:6px}
+.lv b{font-family:'Poppins',Arial,sans-serif;font-size:14.5px;font-weight:600;color:var(--ink);
+ letter-spacing:-.012em;display:block;line-height:1.35}
+@media(max-width:820px){.stage{grid-template-columns:1fr;gap:20px}}
+/* ---------- contacto ---------- */
+#contacto{background:var(--bg2)}
+.cbox{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:clamp(34px,5vw,80px);
+ align-items:start;margin-top:clamp(34px,4vw,54px)}
+@media(max-width:900px){.cbox{grid-template-columns:1fr}}
+.form{background:var(--bg);border:1px solid var(--rule);padding:clamp(26px,3.2vw,42px)}
+.form h3{font-size:20px;font-weight:600;letter-spacing:-.022em;margin-bottom:10px;color:var(--ink)}
+.form>p{font-size:14.5px;color:var(--dim);line-height:1.62;margin-bottom:26px}
+.fg{margin-bottom:19px}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+@media(max-width:520px){.fr{grid-template-columns:1fr}}
+label{display:block;font-family:'Poppins',Arial,sans-serif;font-size:9.5px;font-weight:500;
+ letter-spacing:2px;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+input,select{width:100%;background:transparent;border:none;border-bottom:1px solid var(--rule);
+ padding:9px 1px 10px;font-size:15px;color:var(--ink);font-family:'Lora',Georgia,serif;
+ outline:none;transition:border-color .2s;border-radius:0}
+input:focus,select:focus{border-bottom-color:var(--acc)}
+select{font-family:'Poppins',Arial,sans-serif;font-size:14px;cursor:pointer}
+select option{background:var(--bg2);color:var(--ink)}
+input::placeholder{color:var(--faint)}
+.chk{display:flex;gap:11px;align-items:flex-start;margin:22px 0 24px}
+.chk input{width:16px;height:16px;flex:0 0 16px;margin-top:3px;accent-color:var(--acc)}
+.chk span{font-size:12.5px;color:var(--faint);line-height:1.55}
+.chk a{color:var(--dim);text-decoration:underline}
+button[type=submit],.vbtn{width:100%;background:var(--acc);color:var(--bg);border:none;
+ padding:16px;font-family:'Poppins',Arial,sans-serif;font-size:11.5px;font-weight:600;
+ letter-spacing:1.9px;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:background .2s}
+button[type=submit]:hover,.vbtn:hover{background:var(--acc2)}
+button[disabled]{opacity:.55;cursor:default}
+.cinfo .k{font-family:'Poppins',Arial,sans-serif;font-size:10px;font-weight:500;letter-spacing:2.4px;
+ text-transform:uppercase;color:var(--acc);display:block;margin-bottom:12px}
+.cinfo h4{font-size:17px;font-weight:600;color:var(--ink);margin-bottom:9px;letter-spacing:-.015em}
+.cinfo p{font-size:14.5px;color:var(--dim);line-height:1.66;margin-bottom:28px;max-width:44ch}
+.cinfo a.mail{font-family:'Poppins',Arial,sans-serif;font-size:15px;color:var(--acc);
+ text-decoration:none;font-weight:500}
+.cinfo a.mail:hover{text-decoration:underline}
+#rm-verify{display:none}
+#rm-thanks{display:none;text-align:center;padding:14px 0}
+#rm-thanks h4{font-size:19px;color:var(--ink);margin-bottom:10px}
+#rm-thanks p{font-size:14.5px;color:var(--dim);line-height:1.62}
+/* ---------- footer ---------- */
+footer{background:var(--bg);border-top:1px solid var(--rule);padding:clamp(46px,5vw,72px) 0 40px}
+.fgrid{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(2,minmax(0,1fr));
+ gap:clamp(26px,4vw,60px);margin-bottom:44px}
+@media(max-width:760px){.fgrid{grid-template-columns:1fr;gap:30px}}
+.fgrid img{height:32px;margin-bottom:18px}
+.fgrid p{font-size:13.5px;color:var(--faint);line-height:1.66;max-width:40ch}
+.fgrid h5{font-family:'Poppins',Arial,sans-serif;font-size:9.5px;font-weight:500;letter-spacing:2.2px;
+ text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+.fgrid a{display:block;font-size:13.5px;color:var(--faint);text-decoration:none;margin-bottom:9px;
+ transition:color .2s}
+.fgrid a:hover{color:var(--acc)}
+.fbot{border-top:1px solid var(--rule);padding-top:26px;display:flex;justify-content:space-between;
+ gap:18px;flex-wrap:wrap}
+.fbot span{font-size:12px;color:var(--faint)}
+.claim{font-family:'Poppins',Arial,sans-serif;font-size:clamp(13px,1.5vw,19px);font-weight:700;
+ letter-spacing:-.02em;color:var(--ink);margin-bottom:34px;line-height:1.28;max-width:24ch}
+.claim i{font-style:normal;color:var(--acc)}
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}
+ html{scroll-behavior:auto}}
+::selection{background:var(--acc);color:var(--bg)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+</style>
+</head>
+<body>
+<header id="hd"><div class="w hd">
+ <a href="#hero" aria-label="RiskMathics AI Academy"><img src="rm-logo.png" alt="RiskMathics"></a>
+ <nav>
+  <a href="#arquitectura">Arquitectura</a>
+  <a href="#programas">Programas</a>
+  <a href="#certificaciones">Certificaciones</a>
+  <a href="#kids">Kids Academy</a>
+  <a href="#inversion">Inversion</a>
+  <a href="#contacto" class="cta">Solicitar informacion</a>
+ </nav>
+</div></header>
+<section id="hero">
+ <div class="w">
+  <div class="kicker">RiskMathics AI Academy</div>
+  <h1>Lead Humans.<br>Reinvent Organizations.<br><i>Govern Intelligence.</i></h1>
+  <p class="manifesto">La tecnologia crea posibilidades. El liderazgo las convierte en instituciones.</p>
+  <p class="sub">Escuela ejecutiva para dirigir personas durante el cambio, reinventar modelos de
+   valor, construir empresas AI-Native y gobernar decisiones compartidas entre humanos y sistemas
+   inteligentes.</p>
+  <div class="rail">
+   <div><span>Portafolio</span><b>6 programas<br>3 certificaciones</b></div>
+   <div><span>Formato</span><b>Presencial<br>Club de Industriales</b></div>
+   <div><span>Sede</span><b>Ciudad de Mexico</b></div>
+   <div><span>Respaldo</span><b>RiskMathics<br>Financial Institute</b></div>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="tesis">
+ <div class="w body rv">
+  <span class="eye">La tesis</span>
+  <h2 class="wide">El reto de la alta direccion dejo de ser tecnologico. Ahora es institucional.</h2>
+  <p>La economia digital esta evolucionando hacia una economia de inteligencia distribuida. Los
+   sistemas inteligentes ya participan en analisis, diseno, programacion, servicio, control,
+   investigacion y decision. La computacion cuantica ampliara gradualmente las fronteras de
+   simulacion, optimizacion, seguridad y descubrimiento.</p>
+  <p>Las organizaciones deberan decidir <b>que automatizar, que aumentar, que conservar bajo
+   autoridad humana</b> y como redisenar trabajo, estructura, capital, riesgo y gobierno. La ventaja
+   no pertenecera automaticamente a quienes adopten mas herramientas: pertenecera a quienes integren
+   liderazgo, estrategia, talento, datos, plataformas, procesos y accountability dentro de una
+   arquitectura coherente.</p>
+  <p>Esta Academia no se organiza alrededor de productos tecnologicos. <b>Se organiza alrededor de
+   responsabilidades ejecutivas.</b> Cada programa termina en una decision, un blueprint y una
+   defensa ante panel. Cada certificacion exige integracion, criterio y aplicacion institucional.</p>
+ </div>
+</section>
+
+<section id="arquitectura">
+ <div class="w">
+  <div class="rv">
+   <span class="eye">La arquitectura <b>/ nueve responsabilidades</b></span>
+   <h2 class="wide">Seis responsabilidades ejecutivas. Tres roles de direccion.</h2>
+   <p class="lede">Cada oferta resuelve una pregunta distinta de la alta direccion y termina en un
+    entregable institucional aplicado. Se cursan de forma independiente o como trayectoria.</p>
+  </div>
+  <div class="arch rv">
+   <a href="#p1"><span class="n">I</span><span class="verb">Lead</span>
+    <h3>Human Factor Leadership in the Age of AI</h3>
+    <p>Dirigir personas, decisiones y equipos hibridos cuando la inteligencia artificial transforma
+     el trabajo.</p><div class="meta">8 sesiones . 24 horas</div></a>
+   <a href="#p2"><span class="n">II</span><span class="verb">Reinvent</span>
+    <h3>The Human Advantage</h3>
+    <p>Reinventar productos, servicios, procesos y organizaciones antes de que la ventaja actual
+     pierda vigencia.</p><div class="meta">10 sesiones . 30 horas</div></a>
+   <a href="#p3"><span class="n">III</span><span class="verb">Build</span>
+    <h3>The AI-Native Enterprise</h3>
+    <p>Disenar una empresa donde personas, datos, plataformas y sistemas operen como un solo
+     sistema.</p><div class="meta">10 sesiones . 30 horas</div></a>
+   <a href="#p4"><span class="n">IV</span><span class="verb">Compete</span>
+    <h3>AI Strategy &amp; Competitive Advantage</h3>
+    <p>Convertir inteligencia artificial en crecimiento rentable, diferenciacion y captura
+     sostenible de valor.</p><div class="meta">10 sesiones . 30 horas</div></a>
+   <a href="#p5"><span class="n">V</span><span class="verb">Execute</span>
+    <h3>AI Execution &amp; Enterprise Transformation</h3>
+    <p>Convertir una estrategia aprobada en capacidades, adopcion y resultados medibles.</p>
+    <div class="meta">10 sesiones . 30 horas</div></a>
+   <a href="#p6"><span class="n">VI</span><span class="verb">Govern</span>
+    <h3>AI Governance, Risk &amp; Board Leadership</h3>
+    <p>Gobernar una organizacion donde modelos, agentes y personas deciden asuntos materiales.</p>
+    <div class="meta">10 sesiones . 30 horas</div></a>
+   <a href="#c7"><span class="n">VII . Certificacion</span><span class="verb solid">Transform</span>
+    <h3>Chief AI Transformation Officer</h3>
+    <p>Liderar de principio a fin la transformacion estrategica, humana, operativa y financiera.</p>
+    <div class="meta">120 horas . 6 meses</div></a>
+   <a href="#c8"><span class="n">VIII . Certificacion</span><span class="verb solid">Architect</span>
+    <h3>Chief AI, Technology &amp; Innovation Officer</h3>
+    <p>Integrar tecnologia, datos, inteligencia artificial, innovacion y arquitectura empresarial.</p>
+    <div class="meta">144 horas . 7 meses</div></a>
+   <a href="#c9"><span class="n">IX . Certificacion</span><span class="verb solid">Direct</span>
+    <h3>Chief AI &amp; Quantum Executive Officer</h3>
+    <p>Dirigir una empresa AI-Native y preparada para la siguiente frontera de computo y
+     competencia.</p><div class="meta">90 horas . Residencias</div></a>
+  </div>
+ </div>
+</section>
+<section class="alt" id="programas">
+ <div class="w">
+  <div class="rv">
+   <span class="eye">Programas ejecutivos <b>/ I a VI</b></span>
+   <h2 class="wide">Cada programa termina en una decision y una defensa.</h2>
+   <p class="lede">Presenciales en el Club de Industriales, Ciudad de Mexico. Se cursan de forma
+    independiente: ninguno exige haber tomado otro.</p>
+  </div>
+
+  <div class="prog rv" id="p1">
+   <div class="left">
+    <span class="num">I . Lead</span><span class="verb">Lead</span>
+    <h3>Human Factor Leadership in the Age of AI</h3>
+    <p class="tag">Machines and AI optimize. Humans decide meaning.</p>
+    <div class="q"><p>El liderazgo humano, el criterio y la confianza se vuelven mas valiosos
+     conforme aumenta la capacidad de automatizacion.</p></div>
+   </div>
+   <div>
+    <div class="spec">
+     <div><span>Formato</span><b>8 sesiones . 24 horas . Presencial</b></div>
+     <div><span>Inicio</span><b class="acc">14 de septiembre de 2026</b></div>
+     <div><span>Horario</span><b>18:30 a 21:30 h</b></div>
+     <div><span>Sede</span><b>Club de Industriales . CDMX</b></div>
+     <div><span>Inversion</span><b class="acc">MXN $53,000 + TAX</b></div>
+     <div><span>Entregable</span><b>Human-AI Transformation Blueprint</b></div>
+    </div>
+    <div class="curr">
+     <div><i>01</i><span>Industrial Revolutions &amp; Intelligent Work</span></div>
+     <div><i>02</i><span>The New Economics of Work</span></div>
+     <div><i>03</i><span>Human Judgment under Uncertainty</span></div>
+     <div><i>04</i><span>Human-Centered Leadership</span></div>
+     <div><i>05</i><span>Strategic Workforce Architecture</span></div>
+     <div><i>06</i><span>Design Thinking for Reinvention</span></div>
+     <div><i>07</i><span>Agile Leadership &amp; Human-AI Team Execution</span></div>
+     <div><i>08</i><span>Strategic Storytelling, Governance &amp; Board Challenge</span></div>
+    </div>
+    <div class="who"><b>Dirigido a</b>Gerentes, directores, C-Level, Consejo, CHRO, CIO, CFO, COO,
+     CRO, Estrategia y Transformacion.</div>
+    <div class="btns">
+     <a class="btn" href="https://humanfactorleadership.riskmathicslabs.com/" target="_blank" rel="noopener">Ver programa completo</a>
+     <a class="btn ghost" href="#contacto">Solicitar temario</a>
+    </div>
+   </div>
+  </div>
+
+  <div class="prog rv" id="p2">
+   <div class="left">
+    <span class="num">II . Reinvent</span><span class="verb">Reinvent</span>
+    <h3>The Human Advantage</h3>
+    <p class="tag">Design Thinking, AI Strategy &amp; Organizational Reinvention.</p>
+    <div class="q"><p>La capacidad de aprender, disenar y reinventarse continuamente sera una de las
+     ventajas competitivas mas escasas.</p></div>
+   </div>
+   <div>
+    <div class="spec">
+     <div><span>Formato</span><b>10 sesiones . 30 horas . Presencial</b></div>
+     <div><span>Inicio</span><b class="acc">9 de noviembre de 2026</b></div>
+     <div><span>Horario</span><b>18:30 a 21:30 h</b></div>
+     <div><span>Sede</span><b>Club de Industriales . CDMX</b></div>
+     <div><span>Inversion</span><b class="acc">MXN $65,000 + TAX</b></div>
+     <div><span>Entregable</span><b>Organizational Reinvention Blueprint</b></div>
+    </div>
+    <div class="curr">
+     <div><i>01</i><span>The Reinvention Imperative</span></div>
+     <div><i>02</i><span>Design Thinking for Executive Decision Makers</span></div>
+     <div><i>03</i><span>Systems Thinking &amp; Organizational Complexity</span></div>
+     <div><i>04</i><span>Behavioral Design &amp; Human Decision Architecture</span></div>
+     <div><i>05</i><span>AI Strategy &amp; Business Reinvention</span></div>
+     <div><i>06</i><span>Service Design &amp; Customer Experience</span></div>
+     <div><i>07</i><span>Agile Strategy &amp; Adaptive Execution</span></div>
+     <div><i>08</i><span>Strategic Storytelling &amp; Executive Influence</span></div>
+     <div><i>09</i><span>Innovation Portfolio Management</span></div>
+     <div><i>10</i><span>Organizational Reinvention Lab</span></div>
+    </div>
+    <div class="who"><b>Dirigido a</b>CEO, CIO, CDO, CHRO, CFO, CRO, COO, Estrategia, Innovacion,
+     Producto, CX y Transformacion.</div>
+    <div class="btns">
+     <a class="btn" href="https://thehumanadvantage.riskmathicslabs.com/" target="_blank" rel="noopener">Ver programa completo</a>
+     <a class="btn ghost" href="#contacto">Solicitar temario</a>
+    </div>
+   </div>
+  </div>
+
+  <div class="prog rv" id="p3">
+   <div class="left">
+    <span class="num">III . Build</span><span class="verb">Build</span>
+    <h3>The AI-Native Enterprise</h3>
+    <p class="tag">Building organizations designed for continuous reinvention.</p>
+    <div class="q"><p>La empresa AI-Native no agrega inteligencia artificial a una arquitectura
+     antigua: redisena la arquitectura completa de la organizacion.</p></div>
+   </div>
+   <div>
+    <div class="spec">
+     <div><span>Formato</span><b>10 sesiones . 30 horas . Presencial</b></div>
+     <div><span>Edicion</span><b class="acc">2027 . Calendario por confirmar</b></div>
+     <div><span>Sede</span><b>Club de Industriales . CDMX</b></div>
+     <div><span>Inversion</span><b class="acc">MXN $65,000 + TAX</b></div>
+     <div><span>Entregable</span><b>AI-Native Enterprise Architecture</b></div>
+    </div>
+    <div class="curr">
+     <div><i>01</i><span>From Digital to AI-Native Enterprise</span></div>
+     <div><i>02</i><span>Enterprise Strategy &amp; Intelligence Architecture</span></div>
+     <div><i>03</i><span>Intelligent Operating Models</span></div>
+     <div><i>04</i><span>Human-AI Workforce Architecture</span></div>
+     <div><i>05</i><span>Enterprise Data, Knowledge &amp; Memory</span></div>
+     <div><i>06</i><span>AI Platforms, Agents &amp; Digital Infrastructure</span></div>
+     <div><i>07</i><span>Decision Architecture &amp; Intelligent Processes</span></div>
+     <div><i>08</i><span>Governance, Risk &amp; Human Accountability</span></div>
+     <div><i>09</i><span>Scaling the AI-Native Enterprise</span></div>
+     <div><i>10</i><span>AI-Native Enterprise Design Lab</span></div>
+    </div>
+    <div class="who"><b>Dirigido a</b>CEO, COO, CIO, CTO, CDO, Chief AI Officer, CSO, CHRO, CRO,
+     Arquitectos empresariales y lideres de transformacion.</div>
+    <div class="btns"><a class="btn" href="#contacto">Solicitar informacion</a></div>
+   </div>
+  </div>
+
+  <div class="prog rv" id="p4">
+   <div class="left">
+    <span class="num">IV . Compete</span><span class="verb">Compete</span>
+    <h3>AI Strategy &amp; Competitive Advantage</h3>
+    <p class="tag">Competing, winning and scaling in the AI economy.</p>
+    <div class="q"><p>La tecnologia se democratiza. La ventaja surge de mejores elecciones sobre
+     donde competir, que construir, que proteger y como monetizar.</p></div>
+   </div>
+   <div>
+    <div class="spec">
+     <div><span>Formato</span><b>10 sesiones . 30 horas . Presencial</b></div>
+     <div><span>Edicion</span><b class="acc">2027 . Calendario por confirmar</b></div>
+     <div><span>Sede</span><b>Club de Industriales . CDMX</b></div>
+     <div><span>Inversion</span><b class="acc">MXN $65,000 + TAX</b></div>
+     <div><span>Entregable</span><b>AI Competitive Strategy Blueprint</b></div>
+    </div>
+    <div class="curr">
+     <div><i>01</i><span>The AI Economy &amp; Industry Disruption</span></div>
+     <div><i>02</i><span>Competitive Strategy in the AI Era</span></div>
+     <div><i>03</i><span>AI Business Models</span></div>
+     <div><i>04</i><span>Platforms, Ecosystems &amp; Network Effects</span></div>
+     <div><i>05</i><span>AI Products &amp; Intelligent Services</span></div>
+     <div><i>06</i><span>Pricing, Monetization &amp; Value Capture</span></div>
+     <div><i>07</i><span>Strategic Capital Allocation</span></div>
+     <div><i>08</i><span>Partnerships, M&amp;A &amp; Strategic Growth</span></div>
+     <div><i>09</i><span>Scaling Competitive Advantage</span></div>
+     <div><i>10</i><span>AI Strategy Lab</span></div>
+    </div>
+    <div class="who"><b>Dirigido a</b>CEO, CFO, CSO, CMO, CPO, CIO, CAIO, Corporate Development,
+     M&amp;A, Growth, Producto y Business Unit Heads.</div>
+    <div class="btns"><a class="btn" href="#contacto">Solicitar informacion</a></div>
+   </div>
+  </div>
+
+  <div class="prog rv" id="p5">
+   <div class="left">
+    <span class="num">V . Execute</span><span class="verb">Execute</span>
+    <h3>AI Execution &amp; Enterprise Transformation</h3>
+    <p class="tag">From strategy to enterprise-wide adoption.</p>
+    <div class="q"><p>La ejecucion institucional es una capacidad estrategica: prioriza, coordina,
+     moviliza y convierte aprendizaje en valor.</p></div>
+   </div>
+   <div>
+    <div class="spec">
+     <div><span>Formato</span><b>10 sesiones . 30 horas . Presencial</b></div>
+     <div><span>Edicion</span><b class="acc">2027 . Calendario por confirmar</b></div>
+     <div><span>Sede</span><b>Club de Industriales . CDMX</b></div>
+     <div><span>Inversion</span><b class="acc">MXN $65,000 + TAX</b></div>
+     <div><span>Entregable</span><b>Enterprise AI Transformation Roadmap</b></div>
+    </div>
+    <div class="curr">
+     <div><i>01</i><span>Enterprise Transformation Architecture</span></div>
+     <div><i>02</i><span>Transformation Office: Mandate &amp; Decision Rights</span></div>
+     <div><i>03</i><span>Portfolio Prioritization &amp; Sequencing</span></div>
+     <div><i>04</i><span>AI Adoption &amp; Workforce Enablement</span></div>
+     <div><i>05</i><span>Executive Change Leadership</span></div>
+     <div><i>06</i><span>Transformation Economics &amp; Funding</span></div>
+     <div><i>07</i><span>Metrics, Dashboards &amp; Value Realization</span></div>
+     <div><i>08</i><span>Risk, Controls &amp; Transformation Governance</span></div>
+     <div><i>09</i><span>Scaling &amp; Institutionalizing Change</span></div>
+     <div><i>10</i><span>Enterprise Transformation Lab</span></div>
+    </div>
+    <div class="who"><b>Dirigido a</b>CEO, COO, Chief Transformation Officer, CSO, CIO, CAIO, CFO,
+     CHRO, PMO, Change y Enterprise Program Leaders.</div>
+    <div class="btns"><a class="btn" href="#contacto">Solicitar informacion</a></div>
+   </div>
+  </div>
+
+  <div class="prog rv" id="p6">
+   <div class="left">
+    <span class="num">VI . Govern</span><span class="verb">Govern</span>
+    <h3>AI Governance, Risk &amp; Board Leadership</h3>
+    <p class="tag">Governing intelligent organizations.</p>
+    <div class="q"><p>La inteligencia puede escalar. La responsabilidad no se delega. La gobernanza
+     convierte velocidad en confianza institucional.</p></div>
+   </div>
+   <div>
+    <div class="spec">
+     <div><span>Formato</span><b>10 sesiones . 30 horas . Presencial</b></div>
+     <div><span>Edicion</span><b class="acc">2027 . Calendario por confirmar</b></div>
+     <div><span>Sede</span><b>Club de Industriales . CDMX</b></div>
+     <div><span>Inversion</span><b class="acc">MXN $65,000 + TAX</b></div>
+     <div><span>Entregable</span><b>AI Governance Charter</b></div>
+    </div>
+    <div class="curr">
+     <div><i>01</i><span>Corporate Governance in the AI Economy</span></div>
+     <div><i>02</i><span>Enterprise AI Governance Operating Model</span></div>
+     <div><i>03</i><span>AI Risk Taxonomy &amp; ERM Integration</span></div>
+     <div><i>04</i><span>Model, Agent &amp; Third-Party Risk</span></div>
+     <div><i>05</i><span>Human Oversight, Accountability &amp; Decision Rights</span></div>
+     <div><i>06</i><span>Regulation, Compliance, Privacy &amp; Conduct</span></div>
+     <div><i>07</i><span>Audit, Assurance, Incidents &amp; Evidence</span></div>
+     <div><i>08</i><span>Board Oversight, Committees &amp; Reporting</span></div>
+     <div><i>09</i><span>Responsible AI, Trust &amp; Reputation</span></div>
+     <div><i>10</i><span>Board Governance Simulation</span></div>
+    </div>
+    <div class="who"><b>Dirigido a</b>Consejeros, CEO, CRO, CCO, General Counsel, CAE, CIO, CISO,
+     Chief AI Officer, Model Risk, Data Governance y reguladores.</div>
+    <div class="btns"><a class="btn" href="#contacto">Solicitar informacion</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+<section id="certificaciones">
+ <div class="w">
+  <div class="rv">
+   <span class="eye">Certificaciones ejecutivas <b>/ VII a IX</b></span>
+   <h2 class="wide">No son cursos largos. Son procesos de acreditacion.</h2>
+   <p class="lede">Cada una exige portafolio, tesis institucional y defensa ante panel
+    ejecutivo. Se ingresa por aplicacion y la admision es selectiva.</p>
+  </div>
+
+  <div class="prog rv" id="c7">
+   <div class="left">
+    <span class="num">VII . Certificacion</span><span class="verb solid">Transform</span>
+    <h3>Chief AI Transformation Officer</h3>
+    <p class="tag">Leading enterprise-wide AI transformation.</p>
+    <div class="q"><p>La transformacion deja de ser un proyecto temporal y se convierte en una
+     responsabilidad ejecutiva permanente.</p></div>
+   </div>
+   <div>
+    <div class="spec">
+     <div><span>Formato</span><b>Executive Certification</b></div>
+     <div><span>Duracion</span><b>120 horas . 6 meses</b></div>
+     <div><span>Cohorte</span><b class="acc">Primera generacion 2027</b></div>
+     <div><span>Sede</span><b>Presencial + Executive Labs . CDMX</b></div>
+     <div><span>Admision</span><b class="acc">Por aplicacion</b></div>
+     <div><span>Entregable</span><b>Enterprise AI Transformation Thesis</b></div>
+    </div>
+    <div class="curr">
+     <div><i>01</i><span>The Executive Transformation Mandate</span></div>
+     <div><i>02</i><span>Human Leadership &amp; Workforce Reinvention</span></div>
+     <div><i>03</i><span>Organizational Reinvention &amp; Operating Models</span></div>
+     <div><i>04</i><span>AI Strategy &amp; Value Portfolio</span></div>
+     <div><i>05</i><span>Data, Platforms &amp; Enterprise Capabilities</span></div>
+     <div><i>06</i><span>Change, Adoption &amp; Communication</span></div>
+     <div><i>07</i><span>Transformation Economics &amp; Capital Allocation</span></div>
+     <div><i>08</i><span>Governance, Risk &amp; Responsible AI</span></div>
+     <div><i>09</i><span>Board Leadership &amp; Stakeholder Management</span></div>
+     <div><i>10</i><span>Transformation Thesis Studio &amp; Defense</span></div>
+    </div>
+    <div class="who"><b>Dirigido a</b>Chief Transformation Officers, COO, CSO, CDO, CAIO, CIO,
+     directores de transformacion y socios de consultoria.</div>
+    <div class="btns"><a class="btn" href="#contacto">Solicitar proceso de admision</a></div>
+   </div>
+  </div>
+
+  <div class="prog rv" id="c8">
+   <div class="left">
+    <span class="num">VIII . Certificacion</span><span class="verb solid">Architect</span>
+    <h3>Chief AI, Technology &amp; Innovation Officer</h3>
+    <p class="tag">Architecting the intelligent technology enterprise.</p>
+    <div class="q"><p>Tecnologia sin estrategia genera complejidad. Estrategia sin arquitectura
+     tecnologica genera irrelevancia.</p></div>
+   </div>
+   <div>
+    <div class="spec">
+     <div><span>Formato</span><b>Advanced Executive Certification</b></div>
+     <div><span>Duracion</span><b>144 horas . 7 meses</b></div>
+     <div><span>Cohorte</span><b class="acc">Segundo semestre de 2027</b></div>
+     <div><span>Sede</span><b>Presencial + Architecture Labs . CDMX</b></div>
+     <div><span>Admision</span><b class="acc">Por aplicacion</b></div>
+     <div><span>Entregable</span><b>Enterprise AI, Technology &amp; Innovation Architecture</b></div>
+    </div>
+    <div class="curr">
+     <div><i>01</i><span>The Modern AI &amp; Technology Executive</span></div>
+     <div><i>02</i><span>Enterprise Technology Strategy</span></div>
+     <div><i>03</i><span>Enterprise Architecture &amp; Operating Model</span></div>
+     <div><i>04</i><span>Cloud, Platforms &amp; Infrastructure Economics</span></div>
+     <div><i>05</i><span>Data, Knowledge &amp; AI Architecture</span></div>
+     <div><i>06</i><span>Agents, Automation &amp; Software Delivery</span></div>
+     <div><i>07</i><span>Cybersecurity, Resilience &amp; Digital Trust</span></div>
+     <div><i>08</i><span>Innovation Portfolio &amp; Product Operating Model</span></div>
+     <div><i>09</i><span>Vendors, Partnerships &amp; Technology Finance</span></div>
+     <div><i>10</i><span>Quantum Readiness &amp; Emerging Technologies</span></div>
+     <div><i>11</i><span>Board Communication &amp; Technology Governance</span></div>
+     <div><i>12</i><span>Architecture Lab &amp; Defense</span></div>
+    </div>
+    <div class="who"><b>Dirigido a</b>CIO, CTO, CDO, CAIO, Chief Architect, y responsables de Datos,
+     Plataformas, Ciberseguridad, Innovacion y Productos Digitales.</div>
+    <div class="btns"><a class="btn" href="#contacto">Solicitar proceso de admision</a></div>
+   </div>
+  </div>
+
+  <div class="prog rv" id="c9">
+   <div class="left">
+    <span class="num">IX . Certificacion</span><span class="verb solid">Direct</span>
+    <h3>Chief AI &amp; Quantum Executive Officer</h3>
+    <p class="tag">Leading AI-Native and Quantum-Ready enterprises.</p>
+    <div class="q"><p>El CEO de la siguiente decada no administrara tecnologia: gobernara
+     inteligencia, asignara capital bajo incertidumbre y preservara proposito y legitimidad.</p></div>
+   </div>
+   <div>
+    <div class="spec">
+     <div><span>Formato</span><b>Summit Executive Certification</b></div>
+     <div><span>Duracion</span><b>90 horas . Residencias ejecutivas</b></div>
+     <div><span>Cohorte</span><b class="acc">2028</b></div>
+     <div><span>Sede</span><b>Club de Industriales + residencias</b></div>
+     <div><span>Admision</span><b class="acc">Por aplicacion</b></div>
+     <div><span>Entregable</span><b>CEO AI &amp; Quantum Enterprise Agenda</b></div>
+    </div>
+    <div class="curr">
+     <div><i>01</i><span>The CEO Mandate in the Age of Intelligent Systems</span></div>
+     <div><i>02</i><span>Geopolitics, Sovereignty &amp; the AI/Quantum Economy</span></div>
+     <div><i>03</i><span>Corporate Strategy &amp; Future Business Models</span></div>
+     <div><i>04</i><span>Capital Allocation for Exponential Technologies</span></div>
+     <div><i>05</i><span>AI-Native Enterprise &amp; Organizational Intelligence</span></div>
+     <div><i>06</i><span>Human Leadership, Workforce &amp; Social License</span></div>
+     <div><i>07</i><span>Quantum Strategy &amp; Enterprise Readiness</span></div>
+     <div><i>08</i><span>Governance, Cybersecurity &amp; Board Oversight</span></div>
+     <div><i>09</i><span>Ecosystems, M&amp;A &amp; Global Competition</span></div>
+     <div><i>10</i><span>CEO Agenda, Investor Narrative &amp; Board Defense</span></div>
+    </div>
+    <div class="who"><b>Dirigido a</b>CEOs, Presidentes, Chairpersons, Fundadores, Principals de
+     Family Office, CEOs regionales y Consejeros.</div>
+    <div class="btns"><a class="btn" href="#contacto">Solicitar proceso de admision</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="alt" id="metodo">
+ <div class="w">
+  <div class="rv">
+   <span class="eye">El metodo</span>
+   <h2 class="wide">Nadie asiste. Todos deciden, disenan y defienden.</h2>
+   <p class="lede">Cada programa produce un activo ejecutivo. El participante sale con una
+    arquitectura de decision y una agenda de implementacion, no unicamente con apuntes.</p>
+  </div>
+  <div class="grid4 rv">
+   <div><span class="k">Casos</span><h4>Financieros y corporativos</h4>
+    <p>Decisiones de alto impacto con restricciones reales y trade-offs que obligan a elegir.</p></div>
+   <div><span class="k">Labs</span><h4>Estudios aplicados</h4>
+    <p>Frameworks, mapeo, diseno y simulacion sobre la organizacion del propio participante.</p></div>
+   <div><span class="k">Capstone</span><h4>Blueprint institucional</h4>
+    <p>Recomendacion integrada y agenda de implementacion lista para presentarse.</p></div>
+   <div><span class="k">Defensa</span><h4>Panel ejecutivo</h4>
+    <p>Cuestionamiento, evidencia, accountability y solicitud formal de decision.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="toolkit">
+ <div class="w">
+  <div class="rv">
+   <span class="eye">Executive toolkit</span>
+   <h2 class="wide">Entregables que salen del salon.</h2>
+   <p class="lede">Cada programa incluye herramientas y plantillas propias de RiskMathics, y cierra
+    con un blueprint final.</p>
+  </div>
+  <div class="tw rv"><table>
+   <thead><tr><th>Fase</th><th>Herramienta</th><th>Blueprint final</th></tr></thead>
+   <tbody>
+    <tr><td><b>Lead</b></td><td>Work Transformation Map</td><td>Human-AI Transformation Blueprint</td></tr>
+    <tr><td><b>Reinvent</b></td><td>Reinvention Diagnostic</td><td>Organizational Reinvention Blueprint</td></tr>
+    <tr><td><b>Build</b></td><td>AI-Native Enterprise Model</td><td>AI-Native Enterprise Architecture</td></tr>
+    <tr><td><b>Compete</b></td><td>AI Industry Disruption Map</td><td>AI Competitive Strategy Blueprint</td></tr>
+    <tr><td><b>Execute</b></td><td>Enterprise Transformation Architecture</td><td>Enterprise AI Transformation Roadmap</td></tr>
+    <tr><td><b>Govern</b></td><td>AI Governance Matrix</td><td>AI Governance Charter</td></tr>
+   </tbody>
+  </table></div>
+ </div>
+</section>
+
+<section class="alt" id="audiencia">
+ <div class="w">
+  <div class="rv">
+   <span class="eye">Quien asiste</span>
+   <h2 class="wide">Los responsables de la siguiente version de la institucion.</h2>
+   <p class="lede">Los programas son transversales por diseno, porque la transformacion con
+    inteligencia artificial es transversal en la practica.</p>
+  </div>
+  <div class="grid4 rv">
+   <div><span class="k">Consejo y CEO</span>
+    <p>Estrategia, supervision fiduciaria, asignacion de capital y direccion institucional.</p></div>
+   <div><span class="k">Estrategia</span>
+    <p>Portafolio, rediseno del modelo operativo, valor y ejecucion.</p></div>
+   <div><span class="k">Tecnologia y datos</span>
+    <p>Arquitectura, plataformas, datos, agentes, ciberseguridad y capacidades.</p></div>
+   <div><span class="k">Finanzas y operacion</span>
+    <p>Economia, productividad, inversion, apalancamiento operativo y desempeno.</p></div>
+   <div><span class="k">Capital humano</span>
+    <p>Arquitectura de fuerza laboral, habilidades, adopcion, cultura y movilidad.</p></div>
+   <div><span class="k">Riesgo, legal y auditoria</span>
+    <p>Gobernanza, evidencia, supervision, conducta, regulacion y accountability.</p></div>
+   <div><span class="k">Producto y comercial</span>
+    <p>Valor al cliente, servicios inteligentes, pricing y distribucion.</p></div>
+   <div><span class="k">Instituciones</span>
+    <p>Bancos, aseguradoras, gestores de activos, fintechs, bolsas, corporativos y sector publico.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="faculty">
+ <div class="w body rv">
+  <span class="eye">Faculty y estandar academico</span>
+  <h2 class="wide">El faculty ensena desde decisiones que puede explicar.</h2>
+  <p>El profesorado se selecciona por experiencia institucional, capacidad docente y aptitud para
+   conectar disciplinas: ejecutivos y practitioners senior de liderazgo, estrategia, tecnologia,
+   finanzas, riesgo, talento y gobernanza.</p>
+  <p><b>El estandar RiskMathics:</b> el faculty debe ensenar desde decisiones que puede explicar,
+   sistemas que puede defender y consecuencias que comprende.</p>
+  <div class="grid3" style="margin-top:44px">
+   <div><span class="k">Casos</span><p>Frameworks anclados en instituciones financieras y grandes
+    corporativos.</p></div>
+   <div><span class="k">Consistencia</span><p>Plantillas unificadas de ensenanza, rubricas de
+    capstone y preparacion de faculty.</p></div>
+   <div><span class="k">Vigencia</span><p>Revision anual de curricula y actualizacion regulatoria
+    aplicable.</p></div>
+  </div>
+ </div>
+</section>
+<section class="alt" id="kids">
+ <div class="w">
+  <div class="rv">
+   <span class="eye">AI Kids Academy <b>/ segunda division</b></span>
+   <h2 class="wide">La otra mitad del problema no esta en el consejo. Esta en la primaria.</h2>
+   <p class="lede">En Mexico, 34% de los estudiantes alcanza al menos el nivel 2 en matematicas de
+    PISA, frente a 69% del promedio OCDE. El cuello de botella regional ya no es acceso a
+    herramientas: es formacion de talento. AI Kids Academy es la respuesta de largo plazo.</p>
+  </div>
+  <div class="grid3 rv">
+   <div><span class="k">Math-first</span><h4>Las matematicas son infraestructura</h4>
+    <p>La habilidad matematica al ingreso escolar es el predictor mas fuerte de logro academico
+     posterior, por encima de lectura y atencion. Se trata como base, no como materia.</p></div>
+   <div><span class="k">Pipeline por edad</span><h4>Cinco etapas, tres niveles</h4>
+    <p>De 6 a 25 anos. Cada etapa tiene nivel basico, medio y avanzado, con capstone obligatorio y
+     evidencia verificable por estudiante.</p></div>
+   <div><span class="k">Trayectoria</span><h4>Hasta STEM y quantum</h4>
+    <p>Algebra lineal, probabilidad, optimizacion y fundamentos de quantum information para la
+     etapa avanzada, con portafolio listo para universidad e industria.</p></div>
+  </div>
+
+  <div style="margin-top:clamp(46px,5vw,74px)" class="rv">
+   <div class="stage">
+    <div><div class="age">6-8</div><h4>Alfabetizacion cuantitativa y logica de modelos</h4>
+     <p class="d">Patrones, clasificacion, datos como ejemplos, y la disciplina de especificar y
+      probar. Sin metaforas: entrada, regla, salida.</p></div>
+    <div class="lv">
+     <div><span class="n">Basico</span><b>Patterns, Logic &amp; AI Literacy</b></div>
+     <div><span class="n">Medio</span><b>Data Stories &amp; Simple Prediction</b></div>
+     <div><span class="n">Avanzado</span><b>Mini Systems Thinking: Inputs, Rules, Checks</b></div>
+    </div>
+   </div>
+   <div class="stage">
+    <div><div class="age">9-12</div><h4>Fundamentos de machine learning y lenguaje</h4>
+     <p class="d">Del dato al modelo: entrenamiento, evaluacion y los primeros proyectos propios de
+      vision y texto.</p></div>
+    <div class="lv">
+     <div><span class="n">Basico</span><b>Machine Learning Foundations</b></div>
+     <div><span class="n">Medio</span><b>LLM Literacy</b></div>
+     <div><span class="n">Avanzado</span><b>Vision &amp; Text Mini Projects</b></div>
+    </div>
+   </div>
+   <div class="stage">
+    <div><div class="age">13-16</div><h4>Ingenieria de AI</h4>
+     <p class="d">Embeddings, busqueda semantica, RAG y agentes. Aqui empieza la construccion real,
+      con criterios de seguridad y responsabilidad.</p></div>
+    <div class="lv">
+     <div><span class="n">Basico</span><b>AI Engineering Fundamentals</b></div>
+     <div><span class="n">Medio</span><b>Embeddings, Semantic Search &amp; RAG</b></div>
+     <div><span class="n">Avanzado</span><b>Agents, Tool Use &amp; Responsible AI</b></div>
+    </div>
+   </div>
+   <div class="stage">
+    <div><div class="age">17-19</div><h4>Produccion y frontera cuantica</h4>
+     <p class="d">Ingenieria de datos, sistemas de LLM en produccion y el track STEM+Quantum para
+      quienes van por la via cientifica.</p></div>
+    <div class="lv">
+     <div><span class="n">Basico</span><b>Data Engineering &amp; ML Production Basics</b></div>
+     <div><span class="n">Medio</span><b>LLM Systems</b></div>
+     <div><span class="n">Avanzado</span><b>STEM+Quantum Track</b></div>
+    </div>
+   </div>
+   <div class="stage">
+    <div><div class="age">20-25</div><h4>Transicion profesional</h4>
+     <p class="d">De operador a ingeniero de AI en produccion, con salida a roles de engineering,
+      datos, producto e investigacion aplicada.</p></div>
+    <div class="lv">
+     <div><span class="n">Basico</span><b>AI Operator</b></div>
+     <div><span class="n">Medio</span><b>AI Engineering in Production</b></div>
+     <div><span class="n">Avanzado</span><b>Frontier Track</b></div>
+    </div>
+   </div>
+  </div>
+
+  <div class="btns rv" style="margin-top:44px">
+   <a class="btn" href="#contacto">Solicitar el modelo academico</a>
+  </div>
+ </div>
+</section>
+<section id="inversion">
+ <div class="w">
+  <div class="rv">
+   <span class="eye">Inversion</span>
+   <h2 class="wide">Estructura unica para programas abiertos. Certificaciones por aplicacion.</h2>
+   <p class="lede">Los montos se presentan como costo + TAX. Cada programa incluye materiales,
+    herramientas, casos, capstone y constancia.</p>
+  </div>
+  <div class="tw rv"><table>
+   <thead><tr><th>Oferta</th><th>Formato</th><th>Inversion</th><th>Incluye</th></tr></thead>
+   <tbody>
+    <tr><td><b>Programa ejecutivo</b></td><td>8 sesiones . 24 horas</td>
+     <td><span class="acc">MXN $53,000 + TAX</span></td>
+     <td>Materiales, herramientas, casos, capstone y constancia.</td></tr>
+    <tr><td><b>Programa ejecutivo</b></td><td>10 sesiones . 30 horas</td>
+     <td><span class="acc">MXN $65,000 + TAX</span></td>
+     <td>Materiales, herramientas, casos, capstone y constancia.</td></tr>
+    <tr><td><b>Trayectoria de tres programas</b></td><td>Ruta por rol</td>
+     <td><span class="acc">Cotizacion</span></td>
+     <td>Credencial de trayectoria y recorrido de aprendizaje integrado.</td></tr>
+    <tr><td><b>Serie completa</b></td><td>De Lead a Govern</td>
+     <td><span class="acc">Cotizacion</span></td>
+     <td>Credencial de la serie completa.</td></tr>
+    <tr><td><b>Cohorte privada o in-company</b></td><td>Entrega institucional a la medida</td>
+     <td><span class="acc">Cotizacion</span></td>
+     <td>Casos y datos internos, panel ejecutivo y blueprint institucional.</td></tr>
+    <tr><td><b>Certificaciones ejecutivas</b></td><td>CAITO . CATIO . CAQEO</td>
+     <td><span class="acc">Por aplicacion</span></td>
+     <td>Admision selectiva, portafolio, tesis y defensa.</td></tr>
+   </tbody>
+  </table></div>
+ </div>
+</section>
+
+<section class="alt" id="riskmathics">
+ <div class="w body rv">
+  <span class="eye">Acerca de RiskMathics</span>
+  <h2 class="wide">Empowering the future of global financial talent.</h2>
+  <p>RiskMathics Financial Institute es una organizacion de educacion y certificacion fundada en
+   2005, con sede en Mexico y operaciones internacionales en Estados Unidos y Toronto. Durante mas
+   de dos decadas ha impartido programas de formacion para la industria financiera, con
+   participantes en mercados globales.</p>
+  <p>Su experiencia abarca dominios centrales y emergentes: <b>administracion de riesgos
+   financieros, asset allocation y asset management, derivados, inversiones alternativas, ESG
+   climate risk y finanzas sostenibles, mercados globales, inteligencia artificial y computacion
+   cuantica aplicadas a finanzas, private wealth management y banca de inversion.</b></p>
+  <p>RiskMathics AI Academy es la plataforma institucional que extiende esa experiencia al problema
+   ejecutivo de la economia de la inteligencia.</p>
+ </div>
+</section>
+<section id="contacto">
+ <div class="w">
+  <div class="rv">
+   <span class="eye">Contacto</span>
+   <h2 class="wide">Reciba el temario y las condiciones de inscripcion.</h2>
+  </div>
+  <div class="cbox rv">
+   <div class="cinfo">
+    <span class="k">Como funciona</span>
+    <h4>Un asesor le responde con el documento completo</h4>
+    <p>Comparta sus datos y verifique su correo institucional. Recibira el temario del programa que
+     le interesa, el calendario vigente y las condiciones de inscripcion de la generacion en curso.</p>
+    <span class="k">Escribanos directamente</span>
+    <h4>Direccion ejecutiva</h4>
+    <p>Para cohortes privadas, propuestas in-company y procesos de admision a las certificaciones.</p>
+    <a class="mail" href="mailto:executive@riskmathics.com">executive@riskmathics.com</a>
+    <p style="margin-top:26px"><a class="mail" href="mailto:growth@riskmathics.com">growth@riskmathics.com</a></p>
+   </div>
+   <div class="form">
+    <form id="rm-lead" onsubmit="return rmSubmit(event)">
+     <h3>Solicitar informacion</h3>
+     <p>Le enviamos un codigo a su correo para confirmar el envio.</p>
+     <div class="fg"><label>Programa de interes</label>
+      <select name="programa" required>
+       <option value="">Seleccione</option>
+       <option>I . Human Factor Leadership in the Age of AI</option>
+       <option>II . The Human Advantage</option>
+       <option>III . The AI-Native Enterprise</option>
+       <option>IV . AI Strategy &amp; Competitive Advantage</option>
+       <option>V . AI Execution &amp; Enterprise Transformation</option>
+       <option>VI . AI Governance, Risk &amp; Board Leadership</option>
+       <option>VII . Chief AI Transformation Officer</option>
+       <option>VIII . Chief AI, Technology &amp; Innovation Officer</option>
+       <option>IX . Chief AI &amp; Quantum Executive Officer</option>
+       <option>Trayectoria o serie completa</option>
+       <option>Cohorte privada o in-company</option>
+       <option>AI Kids Academy</option>
+      </select></div>
+     <div class="fg fr">
+      <div><label>Nombre</label><input name="nombre" required></div>
+      <div><label>Apellido</label><input name="apellido_paterno" required></div>
+     </div>
+     <div class="fg"><label>Correo institucional</label>
+      <input type="email" name="email" required placeholder="nombre@empresa.com"></div>
+     <div class="fg fr">
+      <div><label>Empresa</label><input name="empresa" required></div>
+      <div><label>Puesto</label><input name="puesto" required></div>
+     </div>
+     <div class="fg"><label>Pais</label>
+      <select name="pais" required>
+       <option value="" data-iso="">Seleccione</option>
+       <option data-iso="mx" selected>Mexico</option>
+       <option data-iso="us">Estados Unidos</option>
+       <option data-iso="co">Colombia</option>
+       <option data-iso="pe">Peru</option>
+       <option data-iso="cl">Chile</option>
+       <option data-iso="ar">Argentina</option>
+       <option data-iso="ec">Ecuador</option>
+       <option data-iso="pa">Panama</option>
+       <option data-iso="es">Espana</option>
+       <option data-iso="ca">Canada</option>
+       <option data-iso="">Otro</option>
+      </select></div>
+     <label class="chk"><input type="checkbox" name="privacidad" required>
+      <span>Acepto el <a href="https://www.riskmathics.com" target="_blank" rel="noopener">Aviso de
+      Privacidad</a> y el tratamiento de mis datos para recibir informacion de este programa.</span></label>
+     <button type="submit">Solicitar temario</button>
+    </form>
+    <div id="rm-verify"></div>
+    <div id="rm-thanks">
+     <h4>Verificamos su correo</h4>
+     <p>Le enviamos el temario y un asesor de RiskMathics le contactara.</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<footer>
+ <div class="w">
+  <p class="claim">Lead Humans. Reinvent Organizations. <i>Govern Intelligence.</i></p>
+  <div class="fgrid">
+   <div><img src="rm-logo.png" alt="RiskMathics">
+    <p>RiskMathics AI Academy. Escuela ejecutiva de RiskMathics Financial Institute para el
+     liderazgo, la reinvencion y la gobernanza de empresas AI-Native y Quantum-Ready.</p></div>
+   <div><h5>Programas</h5>
+    <a href="#p1">Human Factor Leadership</a>
+    <a href="#p2">The Human Advantage</a>
+    <a href="#p3">The AI-Native Enterprise</a>
+    <a href="#p4">AI Strategy &amp; Competitive Advantage</a>
+    <a href="#p5">AI Execution &amp; Transformation</a>
+    <a href="#p6">AI Governance, Risk &amp; Board</a></div>
+   <div><h5>Academia</h5>
+    <a href="#certificaciones">Certificaciones ejecutivas</a>
+    <a href="#kids">AI Kids Academy</a>
+    <a href="#inversion">Inversion</a>
+    <a href="#contacto">Contacto</a>
+    <a href="https://www.riskmathics.com" target="_blank" rel="noopener">RiskMathics Financial Institute</a></div>
+  </div>
+  <div class="fbot">
+   <span>RiskMathics Financial Institute. Ciudad de Mexico.</span>
+   <span>executive@riskmathics.com</span>
+  </div>
+ </div>
+</footer>
+
+<script>
+var HD=document.getElementById('hd');
+addEventListener('scroll',function(){HD.classList.toggle('on',scrollY>40)},{passive:true});
+if('IntersectionObserver' in window){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},
+  {rootMargin:'0px 0px -8% 0px',threshold:.06});
+ document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+</script>
+<script>
+const RM_VURL="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/verify-lead";
+const RM_VKEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmZmRzZ3ZnY3Ztb2pvYmZpdWF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzOTQ0NzQsImV4cCI6MjA5MDk3MDQ3NH0.7VKn7st3POLRTLIXx9Y4gRjXbh8v_BKXblc7vFIVu-U";
+const RM_CURSO="riskmathics-ai-academy";
+let RM_LEAD=null;
+async function rmPost(p){const r=await fetch(RM_VURL,{method:"POST",headers:{"Content-Type":"application/json","apikey":RM_VKEY,"Authorization":"Bearer "+RM_VKEY},body:JSON.stringify(p)});return r.json();}
+async function rmSubmit(e){e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));
+ if(!f.privacidad||!f.privacidad.checked){alert("Debe aceptar el Aviso de Privacidad para continuar.");return false;}
+ var so=f.pais&&f.pais.options[f.pais.selectedIndex];
+ d.pais=(so&&so.text)||d.pais||"";d.pais_iso=((so&&so.dataset.iso)||"").toUpperCase();
+ d.apellido=d.apellido_paterno||"";d.curso=RM_CURSO;d.folleto="";d.privacidad=true;d.phone="";
+ d.origen="portal riskmathics.ai";RM_LEAD=d;
+ const b=f.querySelector('button[type=submit]');const t=b.textContent;
+ b.textContent="ENVIANDO CODIGO...";b.disabled=true;let res;
+ try{res=await rmPost(Object.assign({action:"start"},d));}catch(_){res={};}
+ if(res&&res.need_corporate){b.textContent=t;b.disabled=false;rmCorp();return false;}
+ if(res&&res.ok){f.style.display="none";rmCode(d.email);}
+ else{b.textContent=t;b.disabled=false;
+  alert((res&&res.error)||"No pudimos enviar el codigo. Escribanos a executive@riskmathics.com");}
+ return false;}
+function rmCorp(){var c=document.getElementById('rm-verify');
+ c.innerHTML='<p style="font-size:14.5px;color:#95A3B4;line-height:1.66;margin-bottom:18px">'+
+ 'Para enviarle el temario necesitamos su <b style="color:#EDE7DC">correo institucional o de empresa</b>. '+
+ 'Si no cuenta con uno, escribanos y con gusto le atendemos.</p>'+
+ '<a class="btn" href="mailto:executive@riskmathics.com">executive@riskmathics.com</a>';
+ c.style.display="block";}
+function rmCode(email){var c=document.getElementById('rm-verify');
+ c.innerHTML='<p style="font-size:14.5px;color:#95A3B4;line-height:1.66;margin-bottom:20px">'+
+ 'Le enviamos un <b style="color:#EDE7DC">codigo</b> a <b style="color:#EDE7DC">'+email+'</b>. '+
+ 'Escribalo aqui para recibir el temario.</p>'+
+ '<div class="fg"><label>Codigo de 6 digitos</label>'+
+ '<input id="rm-otp" inputmode="numeric" maxlength="6" style="font-size:22px;letter-spacing:8px;'+
+ 'font-family:Poppins,Arial,sans-serif"></div>'+
+ '<button type="button" class="vbtn" onclick="rmVerify()">Verificar y recibir temario</button>'+
+ '<p id="rm-vmsg" style="font-size:12.5px;color:#63748A;margin-top:12px"></p>'+
+ '<p style="font-size:12.5px;color:#63748A;margin-top:14px">No le llego? Revise su bandeja de no '+
+ 'deseados o escribanos a <a href="mailto:executive@riskmathics.com" style="color:#D97757">'+
+ 'executive@riskmathics.com</a></p>';
+ c.style.display="block";var i=document.getElementById('rm-otp');if(i)i.focus();}
+async function rmVerify(){var v=(document.getElementById('rm-otp').value||"").trim();
+ var m=document.getElementById('rm-vmsg');
+ if(v.length<4){m.textContent="Escriba el codigo que le enviamos por correo.";return;}
+ m.textContent="Verificando...";var res;
+ try{res=await rmPost(Object.assign({},RM_LEAD,{action:"check",email_code:v}));}catch(_){res={};}
+ if(res&&res.verified){document.getElementById('rm-verify').style.display="none";
+  document.getElementById('rm-thanks').style.display="block";}
+ else{m.textContent=(res&&res.error)||"Codigo incorrecto o vencido. Intente de nuevo.";}}
+</script>
+</body>
+</html>
